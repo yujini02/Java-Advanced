@@ -1,7 +1,7 @@
 package day01.polymorphism.P2;
 
 public class VideoShop {
-   /* public static void main(String[] args) {
+    public static void main(String[] args) {
         Content[] content = new Content[3];
         content[0] = new Video("이클립스","new");
         content[1] = new Video("체포왕","comic");
@@ -17,5 +17,5 @@ public class VideoShop {
             content1.show();
         }
 
-    }*/
+    }
 }
