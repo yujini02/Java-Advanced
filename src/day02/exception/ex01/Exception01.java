@@ -1,4 +1,4 @@
-package day02.exception;
+package day02.exception.ex01;
 
 public class Exception01 {
     public static void main(String[] args) {
