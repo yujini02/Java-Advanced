@@ -1,4 +1,4 @@
-package day01;
+package day01.lecture;
 
 class A1 {
     public String field1;

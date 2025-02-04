@@ -1,4 +1,4 @@
-package day01;
+package day01.lecture;
 class A{}
 class B extends A{}
 class D extends B{}

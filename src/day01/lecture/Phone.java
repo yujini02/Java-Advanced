@@ -1,4 +1,4 @@
-package day01;
+package day01.lecture;
 
 public class Phone{
     //필드 선언

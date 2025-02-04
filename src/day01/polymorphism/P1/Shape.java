@@ -1,11 +1,11 @@
 package day01.polymorphism.P1;
 
 public abstract class Shape {
-    private double area;
-    private String name;
+    protected double area;    //#area : double
+    private String name;      //-name : String
 
     public Shape(){}
-    public Shape(String name){
+    public Shape(String name){  //Shape 생성자를 오버로딩
         this.name = name;
     }
 
@@ -27,4 +27,6 @@ public abstract class Shape {
     public void setName(String name) {
         this.name = name;
     }
+
+
 }

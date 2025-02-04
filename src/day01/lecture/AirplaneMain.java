@@ -1,4 +1,4 @@
-package day01;
+package day01.lecture;
 
 public class AirplaneMain {
     public static void main(String[] args) {

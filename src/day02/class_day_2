@@ -1,0 +1,54 @@
+#봉인된(sealed) 클래스
+기본적으로 final클래스를 제외한 모든 클래스는 부모클래스가 될 수 있다.
+Java15부터 무분별한 자식 클래스 생성을 방지하기 위해 도입됨
+
+public sealed class Person permits Employee, Manger {...}
+final은 더 이상 상속 할 수 없다.
+public final class Employee extends Person{.....}
+또는
+public non-sealed class Manager extends Person{.....}
+봉인을 해제한다. Manager 자식클래스를 만들 수 있다.
+public class Director extends Manager {.....}
+sealed 키워드를 사용하면 permits 키워드 뒤에 상속 가능한 자식 클래스를 지정한다.
+
+1.예외 와 예외 클래스
+예외처리를 하는 이유 : 어플리케이션(프로그램)의 정상적인 종료를 위해서
+
+자바에서는
+하드웨어 고장으로 인해 응용프로그램 실행 오류가 발생 - 에러(Error)
+Error 이외에 대한 오류를 예외(Exception)이라고 한다.
+예외란 것은 잘못된 사용 또는 코딩으로 인한 오류
+ - 일반 예외 (Exception)
+    컴파일러가 예외 처리 코드 여부를 검사
+ - 실행 예외 (Runtime Exception)
+    컴파일러가 예외 처리 코드 여부를 검사하지 않는 예외
+
+자바는 예외가 발생하면 예외 클래스로부터 객체를 생성한다.
+이 객체는 예외 처리 시 사용되고, 자바의 모든 에러와 예외 클래스는 Throwable을 상속받아 만들어지고,
+추가적으로 예외 클래스는 java.lang.Exception 클래스를 상속받는다. 실행예외는 RuntimeException 과
+그 자식클래스에 해당한다.
+java.lang 패키지를 표준 라이브러리 라고 한다. import를 하지 않아도 사용가능한 라이브러리
+
+2. 예외 처리 코드
+예외가 발생했을 때 프로그램의 갑작스러운 종료(비정상적 종료)를 막고,
+정상 실행을 유지할 수 있도록 처리하는 코드를 예외 처리 코드라 한다.
+try - catch
+try - catch -finally
+
+생성자 내부 나 메소드 내부에서 작성된다.
+
+try {
+    .......
+    문제발생
+      } catch(Exception e){
+        e.printStackTrace();
+    }finally{
+        항상 실행 (필수는 아님)
+}
+
+프로그래밍의 오류 종류
+ - 컴파일 에러 (compile-time error) : 컴파일시에 발생하는 에러 , 문법 구문 오류(syntax error)
+ - 런타임 에러 (runtime error) : 실행시에 발생하는 에러 (설계 미숙시 많이 발생)
+ - 논리적 에러 (logical error) : 실행은 되지만 의도와 다르게 동작하거나 성능개선을 하다 나타나는 오류
+   bug , debugging (디버깅) , debugger(디버거)
+   ex) 재고관리 -- 재고량이 음수가 나오면 안되는데 , 나오는 경우,
