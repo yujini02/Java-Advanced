@@ -1,4 +1,4 @@
-package day1;
+package day01;
 
 public class SmartPhone extends Phone {
 
@@ -19,5 +19,13 @@ public class SmartPhone extends Phone {
 
     public void internet(){
         System.out.println("인터넷을 연결합니다.");
+    }
+
+    @Override
+    public void bell() {
+        super.bell();
+
+        System.out.println("추가된 벨소리");
+        System.out.println("벨이 띠링띠리링~ 울린다.");
     }
 }

@@ -1,6 +1,6 @@
-package day1;
+package day01;
 
-public class Phone {
+public class Phone{
     //필드 선언
     public String model;
     public String color;
@@ -14,6 +14,10 @@ public class Phone {
     }
     //메소드
     public void bell(){
-        System.out.println("벨이 울린다.");
+        System.out.println("벨이 띠링띠링 울린다.");
+    }
+
+    final public void VolumeUp(){
+        System.out.println("볼륨을 줄입니다.");
     }
 }

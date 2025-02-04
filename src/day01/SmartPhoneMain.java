@@ -1,4 +1,4 @@
-package day1;
+package day01;
 
 public class SmartPhoneMain {
     public static void main(String[] args) {
@@ -16,6 +16,7 @@ public class SmartPhoneMain {
 
         //SmartPhone 으로부터 상속받은 메소드 호출
         myphone.setWifi(true);
+
 
     }
 }
