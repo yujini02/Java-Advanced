@@ -1,6 +1,4 @@
-package day05.ex06.Ex01;
-
-import day05.ex06.builderpatternEx1.Hamburger;
+package day05.ex06.builderpatternEx2;
 
 public class Student {
     //필수멤버

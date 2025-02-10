@@ -1,4 +1,4 @@
-package day05.ex06.Ex01;
+package day05.ex06.builderpatternEx2;
 
 public class StudentMain {
     public static void main(String[] args) {
