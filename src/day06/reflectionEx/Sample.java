@@ -13,7 +13,7 @@ public class Sample {
         System.out.println(cls2);
         //Class.forName()
 
-        try {
+        try { //인스턴스 할 수 없고 메소드 호출할 수 있다.
             Class<?> cls3 = Class.forName("java.lang.String"); //동적 로딩
             System.out.println(cls3);
         } catch (Exception e) {
