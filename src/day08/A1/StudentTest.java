@@ -12,7 +12,7 @@ public class StudentTest {
     public static void main(String[] args) throws IOException {
         List<Student> students = new ArrayList<>();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println();
+
         while (true){
             System.out.print("이름을 입력하세요: ");
             String inputName = br.readLine();
